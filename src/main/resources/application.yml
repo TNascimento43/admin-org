@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /api
+
+spring:
+  application:
+    name: iurdapi
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    hibernate:
+      naming:
+        physical-strategy: org.com.iurdapp.configuration.CustomPhysicalNamingStrategyImpl
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: America/Recife
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://35.247.255.93:3306/adminiurd
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+#  liquibase:
+#    enabled: true
+#    change-log: classpath:config/liquibase/master.xml
