@@ -1,0 +1,8 @@
+swagger: "2.0"
+info:
+  title: "IURD API"
+  description: "Api de administração"
+  version: "1.0.0"
+host: "iurdapi.appspot.com"
+schemes:
+  - "https"
